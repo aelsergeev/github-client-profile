@@ -16,11 +16,10 @@ before_script:
 
 script:
   - yarn build
-  - yarn run cypress:run
   - yarn test
 
 deploy:
   provider: heroku
-  app: github-user-profile
+  app: github-client-profile
   api_key:
     secure: $HEROKU_KEY
