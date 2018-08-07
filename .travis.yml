@@ -18,3 +18,9 @@ script:
   - yarn build
   - yarn run cypress:run
   - yarn test
+
+deploy:
+  provider: heroku
+  app: github-user-profile
+  api_key:
+    secure: $HEROKU_KEY
